@@ -26,7 +26,7 @@ $ npm start # or yarn start
 ```
 
 ## Steps
-Each step is a branch. Check out to the step you want to test.
+Each step is a branch. Check out to the step you want to test
 
 ```bash
 $ git checkout <step-number>    # eg: git checkout step-1
