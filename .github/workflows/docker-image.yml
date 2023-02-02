@@ -52,5 +52,5 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           # Example commands to run on the EC2 instance
-          sudo docker pull ${{ steps.login-ecr.outputs.registry }}/${{ env.Repository_name }}:latest
+          docker pull ${{ steps.login-ecr.outputs.registry }}/${{ env.Repository_name }}:latest
           docker images
