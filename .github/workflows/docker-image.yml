@@ -55,4 +55,4 @@ jobs:
           aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 104762879464.dkr.ecr.us-east-1.amazonaws.com
           docker pull ${{ steps.login-ecr.outputs.registry }}/${{ env.Repository_name }}:latest
           docker images
-          docker-compose -f /opt/docker/apps/docker-compose.yml up -d node-sample
+          docker-compose -f /opt/docker/apps/docker-compose.yml up -d react-todo
